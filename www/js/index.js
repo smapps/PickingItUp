@@ -43,7 +43,15 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
+		// Simple usage, initialize once, setting the IP address and port of the intended receiver
+		udptransmit.initialize("192.168.1.100", 50000);
 
+		// Then send messages over and over
+		var sendIt = "0x24,0x00,0x55";
+		
+		udptransmit.sendMessage(sendIt);
+		//udptransmit.sendMessage(“Another message”);
+		//udptransmit.sendMessage(“Yet another message”);
         console.log('Received Event: ' + id);
     }
 };

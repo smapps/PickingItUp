@@ -47,7 +47,7 @@ var app = {
 		udptransmit.initialize("192.168.1.100", 50000);
 
 		// Then send messages over and over
-		var sendIt = "0x24,0x00,0x55";
+		var sendIt = "24 00 55";
 		
 		udptransmit.sendMessage(sendIt);
 		//udptransmit.sendMessage(“Another message”);

@@ -7,17 +7,17 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>PO Picking It Up v2</name>
+    <name>SMAPPS UDP TESTER</name>
 
     <description>
 		Pan Oston Pickup App V2 for iPhone with iOS7
     </description>
     
-    <preference name="orientation" value="portrait" />
+    	<preference name="orientation" value="portrait" />
 	<preference name="fullscreen" value="true" />
 	<preference name="DisallowOverscroll" value="true" />
+	<gap:plugin name="edu.uic.travelmidwest.cordova.udptransmit" />
 	
-	<gap:plugin name="edu.uic.travelmidwest.cordova.udptransmit" version="0.0.1" />
 	
     <author href="http://www.smapps.nl" email="info@smapps.nl">
         SMAPPS | S.W. Verploeg and M.Haagen
